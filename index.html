@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSwap | Community Bartering</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">Skill<span>Swap</span><span class="logo-star">✳</span></a>
+
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#explore">Explore Swaps</a>
+        <a href="#about">About</a>
+      </div>
+
+      <a href="#explore" class="btn btn-small">Find a Swap →</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <span class="eyebrow">✦ Your community. Your currency.</span>
+        <h1>Good things happen<br>when we <em>swap.</em></h1>
+        <p>
+          Have a skill to share? Something extra sitting around?
+          Trade what you have for something you need.
+          No money required, just neighbors helping neighbors.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#explore" class="btn">Explore Swaps →</a>
+          <a href="#how-it-works" class="btn btn-outline">How It Works</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>✂ Haircuts</span>
+          <span>🥚 Fresh Eggs</span>
+          <span>🌿 Gardening</span>
+          <span>🛠 Home Repairs</span>
+        </div>
+      </div>
+      <div class="hero-decoration" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">SIMPLE AS 1, 2, 3</span>
+          <h2>How SkillSwap Works</h2>
+          <p>Making the most of what your community has to offer.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-icon">💡</div>
+            <span class="step-number">01</span>
+            <h3>Share What You Have</h3>
+            <p>Offer a skill, service, or item you're willing to trade.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-icon">🔎</div>
+            <span class="step-number">02</span>
+            <h3>Discover a Swap</h3>
+            <p>Browse what others have available in your community.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-icon">🤝</div>
+            <span class="step-number">03</span>
+            <h3>Make a Trade</h3>
+            <p>Connect with someone and agree on a fair exchange.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore-section section" id="explore">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">THE COMMUNITY MARKETPLACE</span>
+          <h2>Discover Your Next Swap</h2>
+          <p>Explore the skills and goods your neighbors have to offer.</p>
+        </div>
+
+        <div class="market-toolbar">
+          <div class="filters" role="group" aria-label="Filter listings">
+            <button class="filter-btn active" data-filter="all">All Swaps</button>
+            <button class="filter-btn" data-filter="skill">Skills</button>
+            <button class="filter-btn" data-filter="item">Items</button>
+          </div>
+
+          <button id="randomBtn" class="btn random-btn">
+            ✨ Show 3 Random Swaps
+          </button>
+        </div>
+
+        <p id="resultsMessage" class="results-message" aria-live="polite"></p>
+        <div id="swapGrid" class="swap-grid"></div>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about">
+      <div class="container about-content">
+        <div>
+          <span class="eyebrow">MORE THAN A MARKETPLACE</span>
+          <h2>A little trading.<br>A lot of community.</h2>
+        </div>
+        <div>
+          <p>
+            SkillSwap is built around a simple idea: everyone has
+            something valuable to offer. Whether you're trading a
+            haircut for fresh eggs or tutoring for homemade bread,
+            there's no need for every exchange to involve money.
+          </p>
+          <p>
+            Our goal is to bring neighbors together, encourage
+            resourcefulness, and make everyday exchanges easier.
+          </p>
+          <a href="#explore" class="btn">Find Your Next Swap →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <span class="logo">Skill<span>Swap</span> ✳</span>
+      <p>Trade what you have. Get what you need.</p>
+      <small>© 2026 SkillSwap. Built for community.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
