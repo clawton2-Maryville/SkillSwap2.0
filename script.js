@@ -4,7 +4,6 @@ const listings = [
     name: "Sarah",
     title: "Haircuts & Styling",
     category: "skill",
-    icon: "✂️",
     description: "Offering basic haircuts and trims.",
     wants: "Fresh eggs or garden vegetables"
   },
@@ -12,7 +11,6 @@ const listings = [
     name: "Mike",
     title: "Lawn Mowing",
     category: "skill",
-    icon: "🌱",
     description: "Lawn mowing and yard cleanup.",
     wants: "Home-cooked meals"
   },
@@ -20,7 +18,6 @@ const listings = [
     name: "Emma",
     title: "Fresh Farm Eggs",
     category: "item",
-    icon: "🥚",
     description: "Fresh eggs from backyard chickens.",
     wants: "Haircuts or baked goods"
   },
@@ -28,7 +25,6 @@ const listings = [
     name: "James",
     title: "Computer Repair",
     category: "skill",
-    icon: "💻",
     description: "Help with computer problems and setup.",
     wants: "Household repairs"
   },
@@ -36,7 +32,6 @@ const listings = [
     name: "Olivia",
     title: "Homemade Bread",
     category: "item",
-    icon: "🍞",
     description: "Freshly baked homemade bread.",
     wants: "Garden vegetables"
   },
@@ -44,7 +39,6 @@ const listings = [
     name: "Daniel",
     title: "Car Detailing",
     category: "skill",
-    icon: "🚗",
     description: "Interior car cleaning and detailing.",
     wants: "Lawn care"
   },
@@ -52,7 +46,6 @@ const listings = [
     name: "Ashley",
     title: "Garden Vegetables",
     category: "item",
-    icon: "🥕",
     description: "Seasonal vegetables from my garden.",
     wants: "Baked goods or pet sitting"
   },
@@ -60,7 +53,6 @@ const listings = [
     name: "Chris",
     title: "Math Tutoring",
     category: "skill",
-    icon: "📚",
     description: "Math tutoring for students.",
     wants: "Home maintenance help"
   },
@@ -68,7 +60,6 @@ const listings = [
     name: "Megan",
     title: "Handmade Candles",
     category: "item",
-    icon: "🕯️",
     description: "Hand-poured scented candles.",
     wants: "Photography services"
   },
@@ -76,7 +67,6 @@ const listings = [
     name: "Ryan",
     title: "Furniture Assembly",
     category: "skill",
-    icon: "🛠️",
     description: "Assembly of shelves and furniture.",
     wants: "Homemade meals"
   },
@@ -84,7 +74,6 @@ const listings = [
     name: "Jessica",
     title: "Pet Sitting",
     category: "skill",
-    icon: "🐕",
     description: "Pet care while you're away.",
     wants: "House cleaning"
   },
@@ -92,7 +81,6 @@ const listings = [
     name: "Tyler",
     title: "Firewood",
     category: "item",
-    icon: "🪵",
     description: "Seasoned firewood for pickup.",
     wants: "Small engine repair"
   },
@@ -100,7 +88,6 @@ const listings = [
     name: "Nicole",
     title: "Photography",
     category: "skill",
-    icon: "📷",
     description: "Portraits and family photography.",
     wants: "Handmade goods"
   },
@@ -108,7 +95,6 @@ const listings = [
     name: "Brandon",
     title: "Homegrown Herbs",
     category: "item",
-    icon: "🌿",
     description: "Fresh herbs grown at home.",
     wants: "Gardening supplies"
   },
@@ -116,7 +102,6 @@ const listings = [
     name: "Rachel",
     title: "House Cleaning",
     category: "skill",
-    icon: "🧹",
     description: "General household cleaning.",
     wants: "Babysitting or car detailing"
   }
@@ -148,7 +133,9 @@ function displayListings(items) {
 
     card.innerHTML = `
       <div class="card-art ${listing.category}">
-        <span aria-hidden="true">${listing.icon}</span>
+        <span class="card-art-label">
+          ${listing.category === "skill" ? "SKILL EXCHANGE" : "ITEM EXCHANGE"}
+        </span>
       </div>
 
       <div class="card-body">
