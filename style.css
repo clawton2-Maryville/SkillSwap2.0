@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4efe6;
+  color: #333333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #526d4e;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+header p {
+  font-style: italic;
+}
+
+nav {
+  margin-top: 20px;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+nav a:hover {
+  color: #c97b46;
+}
+
+section {
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 8px;
+}
+section h2 {
+  color: #526d4e;
+  border-bottom: 2px solid #c97b46;
+  padding-bottom: 5px;
+}
+section h3 {
+  color: #c97b46;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+dt {
+  color: #526d4e;
+  margin-top: 10px;
+}
+
+img {
+  margin: 10px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.matches {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+#memberList {
+    margin: 20px 0;
+}
+
+#memberList p {
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#showMembersBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+  background-color: #526d4e;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
