@@ -890,3 +890,19 @@ body {
     }
 }
 
+.card-art {
+    height: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-art-label {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #315c4c;
+    text-align: center;
+    padding: 15px;
+}
+
